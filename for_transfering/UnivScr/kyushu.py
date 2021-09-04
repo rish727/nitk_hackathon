@@ -46,7 +46,7 @@ def get():
     for cell in body.find_all('dl'):
         for info in cell.find_all('a'):  
             univ_info += [info.text]
-            url += [base+ info.get('href')]
+            #url += [base+ info.get('href')]
         for time in cell.find_all('dt'):  
             univ_info_time += [time.text]
         

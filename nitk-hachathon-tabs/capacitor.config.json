@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "nitk-hachathon-tabs",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

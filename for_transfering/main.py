@@ -17,15 +17,17 @@ def call():
 
 
         #debag
-        """
+        
         # num_infoの数のみ出力
         if ( len(info) > num_info -1 ) and ( len(date) > num_info -1 ) :
             for i in range(num_info):
                 print(date[i] + ' : ' + info[i])
+                print(url[i])
         else :
             for i in range(min( len(info), len(date))):
                 print(date[i] + ' : ' + info[i])
-        """
+                print(url[i])
+        
         
 def norm_dt(dt):
     num = []
