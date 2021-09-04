@@ -1,0 +1,7 @@
+{
+  "name": "nitk-hackathon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

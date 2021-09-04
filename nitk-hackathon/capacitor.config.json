@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "nitk-hackathon",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
