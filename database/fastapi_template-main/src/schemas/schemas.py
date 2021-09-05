@@ -16,5 +16,11 @@ class Update(BaseModel):
     information: str
     url: str
     
+class Output(BaseModel):
+    name: str
+    date: int
+    information: str
+    url: str
+    
     
 

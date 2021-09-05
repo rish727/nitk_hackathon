@@ -1,17 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      HEN - NEW
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- <div class = left>
+  </div> -->
+
+  <!-- <div class = left> -->
+    <ion-card  *ngFor="let a of articleList">
+      <ion-card-header  >
+        <a href="{{a.url}}">
+          <ion-card-subtitle>{{a.date}}</ion-card-subtitle>
+          <ion-card-title  >{{a.name}}</ion-card-title>
+        </a>
+      </ion-card-header>
+    
+      <ion-card-content>
+       {{ a.information }}
+      </ion-card-content>
+    </ion-card>
+  <!-- </div> -->
+  
+
+ 
+
+  
+
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>

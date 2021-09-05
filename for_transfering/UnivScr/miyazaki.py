@@ -32,7 +32,7 @@ def get():
     return univ_info, univ_info_time, url
         
 if __name__ == "__main__":
-    print(get())
+    get()
     #print(get()) #for demo
     
     

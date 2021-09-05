@@ -3,8 +3,8 @@ import re
 from bs4 import BeautifulSoup
 
 #load_url = 'https://www.kumamoto-u.ac.jp/' #this is hp
-load_url = 'http://www.kochi-u.ac.jp/information/'
-base = 'http://www.kochi-u.ac.jp/'
+load_url = 'https://www.hokudai.ac.jp/news/news/'
+
 
 def get(): 
     univ_info = list()
@@ -15,15 +15,14 @@ def get():
     soup = BeautifulSoup(html.content, "html.parser")
     
     #tab = soup.find(class_="c-tab__body") #HP
-    body = soup.find(class_="contentArticleDocs") #new
+    body = soup.find(class_="showall") #new
 
-    for cell in body.find_all(class_="docs"):
-        for info in cell.find_all('a'):  
+    for cell in body.find_all('dd'):
+        for info in cell.find_all('a'):
             univ_info += [info.text]
-        for time in cell.find_all(class_="date"):  
-            univ_info_time += [time.text]
-        for link in cell.find_all('a'):
-            url += [base + link.get('href')]
+            url += [info.get('href')]
+    for time in body.find_all('dt'):  
+        univ_info_time += [time.text]
             
     return univ_info, univ_info_time, url
         

@@ -14,41 +14,28 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
+  <!-- <div class = left>
+  </div> -->
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+  <!-- <div class = left> -->
+    <ion-card  *ngFor="let a of articleList">
+      <a href="{{a.url}}">
+      <ion-card-header  >
+          <ion-card-subtitle>{{a.name}}  {{a.date}} </ion-card-subtitle>
+          <ion-card-title  > {{ a.information }}</ion-card-title>
+        </ion-card-header>
+      </a>
+<!--     
+      <ion-card-content>
+        
+      </ion-card-content> -->
+    </ion-card>
+  <!-- </div> -->
   
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+ 
+
   
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
 
 
   <app-explore-container name="Tab 1 page"></app-explore-container>

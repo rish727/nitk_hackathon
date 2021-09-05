@@ -26,12 +26,12 @@ def update(update: Update, db: Session=Depends(get_db)):
         raise HTTPException(status_code=404, detail='Account not found')
     return json_data
 
-# @router.post('/login')
-# def login(login: Login, db: Session = Depends(get_db)):
-#     json_data = cruds.login.login(db, login=login)
-#     if not json_data:
-#         raise HTTPException(status_code=404, detail='Account not found')
-#     return {"message": "successed"}
+@router.post('/output')
+def output(db: Session = Depends(get_db)):
+    json_data = cruds.output.output(db)
+    if not json_data:
+        raise HTTPException(status_code=404, detail='Account not found')
+    return json_data  #{"message": "successed"}
 
 # @router.post('/signup')
 # def signup(signup: Signup, db: Session = Depends(get_db)):
