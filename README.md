@@ -5,9 +5,7 @@ I thik it is hard to find a lot of information about tranfering to other univers
 
 so I made this website that is scraping university's home pages.
 
-You can get some new information that you want.
-
-(I cound't prepare all of univ hp ... but I'll try )
+You can get some new information that you want.(I cound't prepare all of univ hp ... but I'll try )
 
 
 
