@@ -1,9 +1,13 @@
 # nitk_hackathon
 
-## for_transfering
+## For What ?
+I thik it is hard to find a lot of information about tranfering to other university from NIT in graduate.
+so I made this website that is scraiping university's home pages.
 
-this is main file.
+#### for_transfering
 
-## for_transfering/prac_scraping
+main file.
 
-this is practice file.
+#### for_transfering/prac_scraping
+
+practice file. you don't need to use.
