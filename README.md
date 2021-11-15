@@ -1,7 +1,7 @@
 # nitk_hackathon
 
 ## For What ?
-I thik it is hard to find a lot of information about tranfering to other university from NIT in graduate.
+I thik it is hard to find a lot of information about tranfering to other university from NIT after graduate.
 
 so I made this website that is scraping university's home pages.
 
